@@ -1,0 +1,25 @@
+#include<stdio.h>
+int Search(int a[],int n,int v)   {
+      //bool exit=FALSE;
+        int found_id=-1;
+        for (int i=0; i<n; i++) {
+               
+        if(a[i]==v) { //依次检查每个元素           
+            //exit=TRUE;           
+            found_id=i;//找到就记录下索引号           
+            break;//跳出循环 
+                 
+        }
+    }   
+    //return exit;   
+    return found_id;
+}
+int main() {
+    //int n = 4;
+    //int v = 42;
+    int c;
+    int b[]= {1,24,42};
+    c =Search(b, 3,42);
+    printf("%d",c);
+    return 0;
+}
