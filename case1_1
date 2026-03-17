@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main() {
+    printf("这是一个把学生百分制分数转换成五分制成绩的程序\n");
+    printf("请输入学生的成绩: ");
+    int score = 1;
+    scanf("%d",&score);
+    if (score < 0 || score > 100) {
+        printf("你输入的成绩有误\n");
+    } else if (score < 60) {
+        printf("你的成绩是：E\n");
+    } else if (score < 70) {
+        printf("你的成绩是：D\n");
+    } else if (score < 80) {
+        printf("你的成绩是：C\n");
+    } else if (score < 90) {
+        printf("你的成绩是：B\n");
+    } else {
+        printf("你的成绩是：A\n");
+    }
+    return 0;
+}
