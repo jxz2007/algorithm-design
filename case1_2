@@ -1,0 +1,15 @@
+#include <stdio.h>
+int Perimeter(int x, int y); //函数Perimeter的声明
+int main() {
+    int length, wide,pmt;
+    printf("请输入矩形的长和宽：");
+    scanf("%d%d",&length,&wide );  //假设用户输入5 3
+    pmt= Perimeter(length,wide)      ;
+    printf("矩形的周长是：%d\n",pmt);
+    return 0;
+}/*以下是函数Perimeter的定义*/
+int  Perimeter(int x, int y) {
+    int z;
+    z=2 * (x + y)                  ;
+    return z;
+}
